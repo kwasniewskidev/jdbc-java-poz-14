@@ -2,6 +2,8 @@ HELP.md
 /target/
 /trainer/
 !.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+.idea
 
 ### STS ###
 .apt_generated
