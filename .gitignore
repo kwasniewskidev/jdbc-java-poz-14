@@ -1,6 +1,6 @@
 HELP.md
 /target/
-/trainer/
+trainer/
 !.mvn/wrapper/maven-wrapper.jar
 .DS_Store
 .idea
