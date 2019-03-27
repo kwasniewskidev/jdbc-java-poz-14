@@ -4,13 +4,17 @@ import java.util.Properties;
 public class MainClass {
 
     public static void main(String... args) {
+        runWithJDBC();
+    }
+
+    private static void runWithJDBC() {
         Connection con = null;
         try {
             con = estabilishConnection();
 
             //tutaj możemy odpalać taski
             TaskRunner taskRunner = new TaskRunner();
-            taskRunner.runPrintContryTask(con);
+            taskRunner.runUpdatePopulationProcedureTask(con);
 
             con.close();
         } catch (SQLException e) {
